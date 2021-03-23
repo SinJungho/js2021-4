@@ -1,3 +1,5 @@
+// 3주차
+
 console.log("hello world!");
 
 let name = "신"+"정"+"호";
@@ -29,4 +31,36 @@ console.log(a);
 typeof (123);
 typeof ("123");
 typeof (true);
+
+// 상수
+const con1 = "string value";
+console.log(con1);
+
+// 조건문 if()
+
+let date = new Date();
+
+console.log("year");
+console.log(date.getFullYear());
+console.log("month");
+console.log(date.getMonth()+1);
+console.log("day");
+console.log(date.getDay());
+console.log("hours");
+console.log(date.getHours());
+console.log("minutes");
+console.log(date.getMinutes());
+console.log("seconds");
+console.log(date.getSeconds());
+console.log("milliseconds");
+console.log(date.getMilliseconds());
+
+if (date.getHours() <12){
+    console.log(`오전입니다.`);
+} if (date.getHours >= 12){
+    console.log(`오후입니다.`)
+}
+
+// if -else
+
 
