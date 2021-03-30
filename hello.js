@@ -116,6 +116,15 @@ switch(date.getMonth()+1){
         break;
 }
 
+// 배열
+
+let a = [54, 'b,', "abc", true, false]
+console.log(a);
+console.log(a[3]);
+
+
+
+
 
 //----------------------------------------------------------------------------
 
