@@ -40,28 +40,28 @@ console.log(con1);
 
 // 조건문 if()
 
-let date = new Date();
+//let date = new Date();
 
-console.log("year");
-console.log(date.getFullYear());
-console.log("month");
-console.log(date.getMonth()+1);
-console.log("day");
-console.log(date.getDay());
-console.log("hours");
-console.log(date.getHours());
-console.log("minutes");
-console.log(date.getMinutes());
-console.log("seconds");
-console.log(date.getSeconds());
-console.log("milliseconds");
-console.log(date.getMilliseconds());
+//console.log("year");
+//console.log(date.getFullYear());
+//console.log("month");
+//console.log(date.getMonth()+1);
+//console.log("day");
+//console.log(date.getDay());
+//console.log("hours");
+//console.log(date.getHours());
+//console.log("minutes");
+//console.log(date.getMinutes());
+//console.log("seconds");
+//console.log(date.getSeconds());
+//console.log("milliseconds");
+//console.log(date.getMilliseconds());
 
-if (date.getHours() <12){
-    console.log(`오전입니다.`);
-} if (date.getHours >= 12){
-    console.log(`오후입니다.`)
-}
+//if (date.getHours() <12){
+ //   console.log(`오전입니다.`);
+//} if (date.getHours >= 12){
+    //console.log(`오후입니다.`)
+//}
 
 // if -else
 
@@ -87,6 +87,35 @@ switch(input % 2){
         console.log("홀수 입니다.");
         break;    
 }
+
+let date = new Date();
+
+switch(date.getMonth()+1){
+    case 1:
+    case 2:
+    case 11:
+    case 12:
+        console.log("winter");
+        break;
+
+    case 3:
+    case 4:
+    case 5:
+        console.log("spring");
+        break;
+                
+    case 6:
+    case 7:
+    case 8:
+        console.log("summer");
+        break;
+
+    case 9:
+    case 10:
+        console.log("april");
+        break;
+}
+
 
 //----------------------------------------------------------------------------
 
