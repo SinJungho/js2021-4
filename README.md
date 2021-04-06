@@ -6,9 +6,9 @@
 
 for 문에서 조건문을 수행할때 순서에 대해 조심해야 하는 부분이 있다.
 
->ex) for (let i = 0; i < 100; i++){  
->    output += i;  
->}  
+>ex) for (let i = 0; i < 100; i++){   
+>    output += i;    
+>}    
 
 1. let i = 0; i <= 100; 을 수행
 2. output += i; 를 수행
@@ -18,15 +18,15 @@ for 문에서 조건문을 수행할때 순서에 대해 조심해야 하는 부
 
 ### for in 반복문, for of 반복문
 
->for (let 인덱스 of 배열){  
->  
->}  
+>for (let 인덱스 of 배열){    
+>    
+>}    
 
 인덱스 값만 필요할 때 쓰인다.
 
->for (let 요소 of 배열){
->    
->}
+>for (let 요소 of 배열){  
+>      
+>}  
 
 인덱스는 필요 없고 값만 필요할 때
 
@@ -36,11 +36,11 @@ for 문에서 조건문을 수행할때 순서에 대해 조심해야 하는 부
 
 if, while, for 과 같은 조건 및 반복문을 이중으로 써서 사용하는 문법이다.
 
-ex) while(true){
-    for (let i = 0; i < 100; i++){
-        console.log(i);
-    }
-}
+ex) while(true){  
+    for (let i = 0; i < 100; i++){  
+        console.log(i);  
+    }  
+}  
 
 ---
 ### break, continue keyword
