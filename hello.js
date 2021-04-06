@@ -126,10 +126,33 @@ switch(date.getMonth()+1){
 
 //6주차
 
-let output = 0;
+// let output = 0;
+// 
+// for(i = 1; i <= 100; i++){
+    // output += i;
+// }
+// 
+// console.log(output);
 
-for(i = 1; i <= 100; i++){
-    output += i;
+// let foo = [1, 2, 3, 4, 5, 6];
+// 
+// for (let i = foo.length; i>= 0; i--){
+    // console.log(foo[i]);
+// }
+
+
+// let foo = [1,2,3,4,5,6];
+// 
+// for (let i = foo.length; i>= 0; i--){
+    // console.log(`${i}번째 요소 : ${foo[i]}`);
+    // }
+// 
+// for(let item in foo){
+    // console.log(item);
+// }
+
+for (let i = 1; i < 10; i++){
+    if(i % 2 == 0){
+        
+    }
 }
-
-console.log(output);
