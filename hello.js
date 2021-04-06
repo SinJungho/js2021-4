@@ -118,13 +118,18 @@ switch(date.getMonth()+1){
 
 // 배열
 
-let a = [54, 'b,', "abc", true, false]
-console.log(a);
-console.log(a[3]);
-
-
-
-
+// let a = [54, 'b,', "abc", true, false]
+// console.log(a);
+// console.log(a[3]);
 
 //----------------------------------------------------------------------------
 
+//6주차
+
+let output = 0;
+
+for(i = 1; i <= 100; i++){
+    output += i;
+}
+
+console.log(output);
