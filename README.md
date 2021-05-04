@@ -24,11 +24,35 @@
 
 ### Number 객체
 
+Number 객체를 생성하는 방법은 2가지이다.
+
+1. let foo = 273;
+2. let bar = new Number(273);
+
+Number 객체가 가진 메서드는
+
+toExponential() -> 지수 표시로 나타내는 문자열
+toFixed() -> 고정 소수점 표시로 나타내는 문자열
+toPrecision -> 지수표시 및 고정 소수점 표시로 나타낸 문자임을 명시
+
 ---
 
 ### String 객체
 
+자바 스크립트에서 가장 많이 쓰이는 객체 중 하나이다.
 
+String 객체를 생성하는 방법 또한 2가지가 존재한다.
+
+1. let foo = "hello";
+2. let bar = new String("hello");
+
+String 객체에 존재하는 메서드 중에 대표적으로
+ charAt(); -> 괄호에 위치 하는 문자를 반환한다. 
+ indexOf(); -> 앞에서부터 일치하는 문자열의 위치를 반환한다.
+ slice(); -> 특정 위치의 문자열을 추출해 반환한다.
+ split();
+
+등이 있다.
 
 ---
 
