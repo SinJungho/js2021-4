@@ -4,8 +4,128 @@
 
 ### 12주차
 
-### 
+### Node.js 기본
 
+### process 객체
+
+`process` : 프로세스 정보를 제공, 제어 할 수 있는 객체
+
+```javascript
+exit() : 프로그램을 종료합니다.
+```
+### event 개요
+
+`on(<이벤트 이름>,<이벤트 핸들러>)` : 이벤트를 연결합니다.
+
+> 이벤트 핸들러 : 이벤트가 발생했을 때 호출할 함수
+
+```javascript
+exit : 프로세스가 종료할 때 발생
+uncaughtException : 예외가 일어날 때 발생
+```
+
+```javascript
+process.on("exit", ()=>{
+    console.log("프로세스가 종료 되었습니다.");
+})
+```
+>ex) process 객체의 이벤트
+
+---
+
+### os 모듈
+
+```javascript
+const os = require("os");
+객체를 생성 후 -> 메서드 사용
+```
+>os라고 꼭 이름이 명시된 것이 아님 사용자 임의대로 바꾸기 가능.
+
+---
+### url
+
+```javascript
+const url = require("url");
+url 모듈을 추출
+```
+```javascript
+url 모듈 메서드
+
+parse(urlStr []) -> url 문자열을 url 객체로 변환
+```
+
+### FileSystem 모듈
+
+```javascript
+const fs = require("fs");
+
+모듈 이름을 약어로 사용함
+```
+#### 파일 읽기 메서드
+
+```javascript
+fs.readFileSync(<file_name>); -> 동기적으로 파일을 읽는다.
+fs.readFile(<file_name>, <callback_function>); -> 비동기적으로 파일을 읽는다.
+```
+
+```javascript
+const fs = require("fs");
+const file = fs.readFileSync("textContent.txt");
+console.log(file);
+console.log(file.toString());
+
+한 번에 다운을 받는다 -> 몇 백 GB, 몇 TB을 다운을 받기에는 무리가 있다.
+```
+
+```javascript
+const fs = require("fs");
+const file = fs.readFileSync("textContent.txt", (error, file) =>{
+    console.log(file);
+    console.log(file.toString());
+});
+
+스스로 한 만큼만 다운을 받아 보여줌 -> 동기적으로 파일을 읽는 방식보다 효율적임
+```
+
+>다만, 동기적으로 읽는 방식보다 비동기식으로 읽는 방식이 더 중요하다.
+>왜냐하면 파일이 크면 그만큼 읽는 시간이 걸리기 때문이다.
+#### 파일쓰기
+
+```javascript
+fs.writeFileSync(<file_name>,<String>); -> 동기적으로 파일을 쓴다.
+fs.writeFile(<file_name>,<String>,<callback_function>); -> 비동기적으로 파일을 쓴다.
+```
+
+```javascript
+const fs = require("fs");
+const file = fs.writeFileSync("textContent.txt");
+console.log(file);
+console.log(file.toString());
+
+한 번에 다운을 받는다 -> 몇 백 GB, 몇 TB을 다운을 받기에는 무리가 있다.
+```
+
+```javascript
+const fs = require("fs");
+const file = fs.writeFileSync("textContent.txt", (error, file) =>{
+    console.log(file);
+    console.log(file.toString());
+});
+```
+#### 파일처리와 예외처리
+
+```javascript
+const fs = require("fs");
+fs.readFile("test.txt", (error, file) => {
+    if(error){
+        console.log("파일을 읽어 들이는데 문제가 발생함.");
+        console.log(error);
+    }else{
+        console.log(file);
+        console.log(file.toString);
+    }
+});
+```
 
 ---
 
