@@ -5,6 +5,66 @@
 
 ### 13주차
 
+### express 모듈
+
+```javascript
+express() -> 서버 애플리케이션 객체를 생성
+app.use() -> 요청이 왔을 때 실행할 함수를 지정
+app.listen() -> 서버를 실행
+```
+#### 페이지 라우팅
+
+```javascript
+get(path, callback) -> GET 요청이 발생할 때 이벤트 리스너 지정
+post(path, callback) -> POST 요청이 발생할 때 이벤트 리스너 지정
+```
+
+```javascript
+const express = require('express');
+const app = express();
+
+app.get('/image', (request, response) => {
+    fs.readFile('333333.png', (error, data) => {
+        const id = request.params.id;
+        response.send(`<h1>${id} Page</h1>`);
+    });
+});
+
+app.listen(52272, () =>{
+    console.log("server running at http://127.0.0.1:52272");
+});
+```
+
+### 요청과 응답
+
+```javascript
+send() -> 데이터 본문을 제공
+status() -> 상태 코드 제공
+set() -> 헤더를 설정
+```
+
+```javascript
+const express = require('express');
+const app = express();
+
+app.get('/image', (request, response) => {
+    fs.readFile('333333.png', (error, data) => {
+        response.status(404);
+        response.set('methodA', 'methodB');
+        response.set({
+            'methodA' : 'AFSFASAF',
+            'methodB' : 'asfasdfa',
+        })
+        response.send(`맘대로 적어보세요`);
+    });
+});
+
+app.listen(52272, () =>{
+    console.log("server running at http://127.0.0.1:52272");
+});
+```
+
+
 ---
 
 # 신정호 [202030421]
