@@ -1,5 +1,73 @@
 # 신정호 [202030421]
 
+## [06월 01일]
+### 오늘 배운 내용 요약
+
+### 14주차
+
+### 버전에 따른 코드 사용 여부
+
+IE -> var
+
+최신 웹 브라우저 -> let, const
+
+var를 사용해도 오류는 생기지 않는다
+
+### 객체 모델
+
+#### screen 객체
+
+웹 브라우저 화면이 아니라 웹 브라우저 그 자체이다.
+
+```javascript
+width() -> 화면의 너비
+heigth() -> 화면의 높이
+availWidth()-> 실제 화면에서 사용 가능한 너비
+availHeigth()-> 실제 화면에서 사용 가능한 높이
+...
+
+```
+
+---
+
+### JQuery
+
+```javascript
+Basic
+
+$(value1).method(parameter1, parameter2);
+```
+
+```javascript
+//css 선택자
+
+$('h1') -> h1 태그를 선택한다.
+$('h1.logo') -> h1 태그 중 logo 클래스를 선택한다.
+$('h1#logo') -> h1 태그 중 logo 아이디를 선택한다.
+
+```
+
+```javascript
+//each()
+
+$('h1').each(function (index, item){
+
+});
+
+```
+
+>odd, even 선택자
+>> odd -> 홀수번째 선택자
+>> even -> 짝수번째 선택자
+
+### 문서 객체 조작
+
+```javascript
+```
+
+---
+# 신정호 [202030421]
+
 ## [05월 25일]
 ### 오늘 배운 내용 요약
 
