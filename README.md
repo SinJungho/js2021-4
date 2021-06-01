@@ -63,6 +63,66 @@ $('h1').each(function (index, item){
 ### 문서 객체 조작
 
 ```javascript
+text() -> html 태그 내부의 문자를 조작한다.
+html() -> html 태그 내부의 문자를 조작하면서 html를 인식한다.
+```
+```html
+<!-- text(), html() 메서드 get 형태 예제 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Text</title>
+    <script src="jquery-3.1.0.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script>
+        $('document').ready(function (){
+            alert($('p').text());
+            alert($('p').html());
+        })
+    </script>
+</head>
+<body>
+    <p>Test1</p>
+    <p>Test2</p>
+    <p>Test3</p>
+</body>
+</html>
+```
+>text() -> 모든 p 태그 내부 문자를 출력
+>html() -> 첫 번째로 선택된 p 태그 문자를 출력
+
+### 스타일 조작
+
+```javascript
+css() -> 스타일을 조작한다.
+
+$('html').css({
+    color : 'blue',
+    backgroundColor : 'white',
+})
+```
+>JSON 형식으로도 사용 가능하다.
+
+### 이벤트
+
+```javascript
+on() -> 이벤트를 연결한다.
+off() -> 이벤트를 제거한다.
+
+//이벤트 직접 연결
+
+$('선택자').on(<이벤트이름>, <콜백함수>);
+```
+
+### 애니메이션
+
+```javascript
+animate() -> 애니메이션을 적용한다.
+
+//애니메이션 연결
+
+$('선택자').animate(<속성>, <시간>, <콜백함수>);
 ```
 
 ---
